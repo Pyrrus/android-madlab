@@ -34,13 +34,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String madLab = "Dear School Nurse:\n" +
-                        mSillyWord + " " + mLastName + " will not be attending school today. He/she has come down with a case of " + mIllness + " and has horrible " + mNoun + " and a/an " + mAdjective1 + " fever. We have made an appointment with the " + mAdjective2 + " Dr. " + mSillyWord2 + ", who studied for many years in " + mPlace + "  and has " + mNumber +  " degrees in pediatrics. He will send you all the information you need. Thank you!\n" +
+                        mSillyWord.getText().toString() + " " + mLastName.getText().toString() + " will not be attending school today. He/she has come down with a case of " + mIllness.getText().toString() + " and has horrible " + mNoun.getText().toString() + " and a/an " + mAdjective1.getText().toString() + " fever. We have made an appointment with the " + mAdjective2.getText().toString() + " Dr. " + mSillyWord2.getText().toString() + ", who studied for many years in " + mPlace.getText().toString() + "  and has " + mNumber.getText().toString() +  " degrees in pediatrics. He will send you all the information you need. Thank you!\n" +
                         "Sincerely\n" +
-                        "Mrs. " + mAdjective3 + ". ";
+                        "Mrs. " + mAdjective3.getText().toString() + ". ";
                 Intent intent = new Intent(MainActivity.this, Output.class);
                 intent.putExtra("madLab", madLab);
                 startActivity(intent);
             }
         });
+
+        mSillyWord.setText("");
+        mLastName.setText("");
+        mAdjective1.setText("");
+        mAdjective2.setText("");
+        mSillyWord2.setText("");
+        mPlace.setText("");
+        mNumber.setText("");
+        mAdjective3.setText("");
     }
 }
