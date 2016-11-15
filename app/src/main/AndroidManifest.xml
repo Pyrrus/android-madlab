@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Output"></activity>
+        <activity android:name=".Output" />
+        <activity android:name=".Madlab1" />
+        <activity android:name=".Madlab2"></activity>
     </application>
 
 </manifest>

@@ -31,7 +31,7 @@ public class Output extends AppCompatActivity {
         mResetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(Output.this, MainActivity.class);
+                Intent intent1 = new Intent(Output.this, Madlab1.class);
                 startActivity(intent1);
             }
         });
