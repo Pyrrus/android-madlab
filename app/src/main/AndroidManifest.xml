@@ -15,9 +15,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Output" />
-        <activity android:name=".Madlab1" />
-        <activity android:name=".Madlab2"></activity>
+        <activity android:name=".Output">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="epicodus.madlab.MainActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".Madlab1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="epicodus.madlab.MainActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".Madlab2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="epicodus.madlab.MainActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".Output2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="epicodus.madlab.MainActivity">
+            </meta-data>
+        </activity>
     </application>
 
 </manifest>
